@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Knight from './Knight';
-import Square from './Square';
+import Game from './Game';
 import './index.css';
 
 ReactDOM.render(
-  <div>
-    <Square black>
-      <Knight />
-    </Square>
-  </div>,
+  <Game />,
   document.getElementById('root')
 );

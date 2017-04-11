@@ -3,11 +3,21 @@
 }
 
 .Square {
-  width: 20%;
+  width: 12.5%;
+  height: 12.5%;
   height: 110px;
+}
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .black {
   background-color: black;
   color: white;
+}
+
+.hover {
+  background-color: yellow;
 }
