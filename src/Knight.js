@@ -5,6 +5,7 @@ import { DragSource } from 'react-dnd';
 
 const knightSource = {
   beginDrag(props) {
+    props.updatePos(props.peiceIndex);
     return {};
   }
 };
@@ -17,9 +18,10 @@ function collect(connect, monitor) {
 }
 
 const Knight = (props) => {
+  const peice = props.peice;
   return props.connectDragSource(
     <div>
-      <span className="knight">&#9816;</span>
+      <span className="peice">{peice}</span>
     </div>
   );
 }
