@@ -19,6 +19,10 @@
   color: white;
 }
 
+.green {
+  background-color: green;
+}
+
 .hover {
   background-color: yellow;
 }

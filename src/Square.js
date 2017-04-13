@@ -18,8 +18,9 @@ function collect(connect, monitor) {
 const Square = (props) => {
   const black = ((props.x + props.y) % 2 === 1)? ' black' : '';
   const hover = props.isOver? ' hover' : '';
+  const green = props.green? ' green': '';
   return props.connectDropTarget(
-    <div onClick={() => props.onClickHandler(props.x,props.y)} className={`Square${black}${hover}`}>
+    <div onClick={() => props.onClickHandler(props.x,props.y)} className={`Square${black}${hover}${green}`}>
       {props.children}
     </div>
   )
