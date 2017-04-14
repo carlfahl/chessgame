@@ -18,10 +18,12 @@ function collect(connect, monitor) {
 }
 
 const Knight = (props) => {
+  const isDragging = props.isDragging;
   const peice = props.peice;
+  const dragstyle = isDragging? ' dragging' : '';
   return props.connectDragSource(
     <div>
-      <span className="peice">{peice}</span>
+      <span className={`peice${dragstyle}`}>{peice}</span>
     </div>
   );
 }

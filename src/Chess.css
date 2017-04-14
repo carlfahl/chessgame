@@ -23,6 +23,11 @@
   background-color: green;
 }
 
+.dragging {
+  /*color: green;*/
+  opacity: 0;
+}
+
 .hover {
   background-color: yellow;
 }
