@@ -3,10 +3,12 @@
 FROM nginx:1.13.0
 
 # Install dependencies
-#RUN apt-get update -y
-#RUN apt-get install -y git curl nodejs npm
+RUN apt-get update -y
+RUN apt-get install -y git curl nodejs npm
 
 # Install app
+
+RUN npm build
 
 RUN rm -rf /usr/share/nginx/html/*
 #RUN rm -rf /var/www/*
