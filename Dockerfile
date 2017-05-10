@@ -1,6 +1,6 @@
 #FROM ubuntu:16.04
 #FROM node:6.10.3
-FROM nginx:1:13.0
+FROM nginx:1.13.0
 
 # Install dependencies
 RUN apt-get update -y
