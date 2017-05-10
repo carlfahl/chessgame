@@ -4,7 +4,7 @@ FROM nginx:1.13.0
 
 # Install dependencies
 RUN apt-get update -y
-RUN apt-get install -y git curl nodejs npm
+RUN apt-get install -y nodejs
 
 # Install app
 
